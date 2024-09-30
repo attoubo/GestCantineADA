@@ -16,7 +16,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
-import java.util.List;
 
 @SpringBootApplication
 @RequiredArgsConstructor
@@ -38,25 +37,36 @@ public class MacantineApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 
+//		MenuDTO menu = new MenuDTO();
+//		menu.setCreationDate(LocalDate.now());
+//		menuService.save(menu);
+//
+//		MenuDTO menu1 = new MenuDTO();
+//		menu1.setCreationDate(LocalDate.now());
+//		menuService.save(menu1);
+//
+//
+//
+//
+//
+//		PlatDTO plat = new PlatDTO();
+//		plat.setName("Foutou sauce graine");
+//		plat.setSummary("Puree de banane ou foutou avec sauce graine");
+//		platService.save(plat);
+//
+//
+//		PlatDTO plat1 = new PlatDTO();
+//		plat1.setName("Gari sans sucre");
+//		plat1.setSummary("semoule de manioc sec sans huile");
+//		platService.save(plat1);
+//
+//
+//		PlatDTO plat2 = new PlatDTO();
+//		plat2.setName("Garba sans huile");
+//		plat2.setSummary("semoule de manioc cuite sans huile");
+//		platService.save(plat2);
 
-		PlatDTO plat = new PlatDTO();
-		plat.setName("Foutou sauce graine");
-		plat.setSummary("Puree de banane ou foutou avec sauce graine");
-		platService.save(plat);
 
-
-		PlatDTO plat1 = new PlatDTO();
-		plat1.setName("Gari sans sucre");
-		plat1.setSummary("semoule de manioc sec sans huile");
-		platService.save(plat1);
-
-
-		PlatDTO plat2 = new PlatDTO();
-		plat2.setId(1L);
-		plat2.setName("Garba sans huile");
-		plat2.setSummary("semoule de manioc cuite sans huile");
-		platService.save(plat2);
-
-
+//		platService.delete(plat2);
 	}
 }
